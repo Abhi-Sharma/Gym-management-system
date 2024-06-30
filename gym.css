@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: url("bodyback.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container{
+  background-color: black;
+  height: 45rem;
+  position: relative;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+.img {
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+}
+.home {
+  font-size: 2rem;
+}
+a.links {
+  text-decoration: none;
+  margin-left: 61px;
+  color: white;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.links:hover{
+  color: #50adbf;
+  top: -10px;       
+}
+img.logo {
+  width: 12rem;
+  transition: 2s ease-in-out;
+}
+.logo:hover{
+  width: 15rem;
+}
+.nav-content {
+  color: white;
+  position: absolute;
+  right: 3rem;
+  top: 23rem;
+}
+h2.nav-title {
+  font-size: 3rem;
+}
+h1.nav-subtitle {
+  text-align: center;
+  font-size: 4rem;
+  color: #50adbf;
+}
+span.nav-sign {
+  text-align: right;
+  display: block;
+  font-size: 1.5rem;
+}
+button.nav-btn {
+  position: relative;
+  left: 82%;
+  margin-top: 20px;
+  width: 9rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #50adbf;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+.nav-btn:hover{
+  background-color: #50adbf;
+  color: black;
+}
+.joinUs{
+  position: absolute;
+  height: 38rem;
+  width: 65%;
+  background-color: wheat;
+  left: 18%;
+  top: 5rem;
+  border-radius: 2rem;
+  transition: 2s linear
+}
+.joinHead{
+  text-align: center;
+  color: #50adbf;
+  font-size: 2.5rem;
+}
+.joinY{
+  color: white;
+  margin-right: 1rem;
+}
+.fa-solid.fa-square-xmark{
+  position: relative;
+  left: 22.5rem;
+  cursor: pointer;
+}
+h2.name {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+.joinPersonal {
+  display: flex;
+  justify-content: space-evenly;
+}
+input.joinDetails {
+  width: 18rem;
+  height: 3rem;
+  text-align: center;
+  border: none;
+  border-radius: 2rem;
+  font-size: 19px;
+  margin-top: 1rem;
+  border: 2px solid #50adbf;
+}
+.age{
+  margin-left: 2rem;
+}
+button.submitForm {
+  width: 99%;
+  position: relative;
+  top: 3.42rem;
+  border: none;
+  height: 3rem;
+  border-radius: 2rem;
+  margin-left: 0.5%;
+  font-size: 23px;
+  background-color: green;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.signup{
+  display: none;
+}
+.schedule {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  height: 42rem;
+  width: 100%;
+}
+h1.schTitle {
+  text-align: center;
+  font-size: 4rem;
+  color: #50adbf;
+}
+.y{
+  color: white;
+  margin-left: 0.5rem;
+}
+h2.schSubtitle {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.schTable {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 6rem;
+}
+.location {
+  text-align: center;
+  font-size: 56px;
+}
+.table1 {
+  width: 33%;
+  border: 2px solid #50adbf;
+  height: 16rem;
+  padding: 2rem;
+}
+.locAddress {
+  margin-top: 1rem;
+  font-size: 32px;
+  text-align: center;
+}
+.client{
+  width: 100%;
+  height: 45rem;
+  background: url("gym1.jpg");
+  background-size: cover;
+}
+.slider{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 45rem;
+}
+h2.clientTitle {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  font-weight: bolder;
+}
+h1.clientSubtitle {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: #50adbf;
+}
+.clientImg{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url("mridul.jpg");
+  background-size: cover;
+  position: relative;
+  left: 46%;
+  margin-top: 2rem;
+}
+.clientName {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: lighter;
+}
+.clientPos{
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+  font-weight: lighter;
+}
+p.clientDes {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+.des {
+  width: 57%;
+  position: relative;
+  left: 21%;
+  margin-top: 4rem;
+}
+i.fa-solid.fa-quote-right {
+  position: relative;
+  left: 48%;
+  font-size: 54px;
+  color: #50adbf;
+  margin-top: 2rem;
+}
+.arrow {
+  display: flex;
+  color: white;
+  width: 99%;
+  justify-content: space-evenly;
+  font-size: 50px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.workout{
+  height: 50rem;
+  width: 100%;
+  background: url("workout.webp");
+  background-size: cover;
+  padding-top: 0.5rem;
+}
+.workoutHead {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #50adbf;
+  font-weight: bold;
+}
+.desWorkout {
+  width: 60%;
+  position: relative;
+  left: 20%;
+  font-size: 15px;
+  color: white;
+  margin-top: 2rem;
+  font-weight: lighter;
+}
+.diffWorkout {
+  width: 60%;
+  position: relative;
+  left: 20%;
+  top: 6rem;
+}
+.work3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.wor{
+  font-size: 3rem;
+  color: white;
+}
+.work6{
+  display: flex;
+  width: 110%;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+span.workoutName {
+  font-size: 41px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.workIcon{
+  color: #50adbf;
+  cursor: pointer;
+}
+button.workoutBook {
+  position: relative;
+  top: 7rem;
+  left: 49rem;
+  width: 24%;
+  height: 2rem;
+  border: navajowhite;
+  border-radius: 2rem;
+  font-size: 16px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #50adbf;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+.workoutBook:hover{
+  background-color: #50adbf;
+  color: black;
+}
+.started {
+  width: 54%;
+  height: 48rem;
+  position: relative;
+  left: 46%;
+  background: url("join3.jpg");
+  background-size: cover;
+}
+button.startedWorkout {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 5rem;
+  width: 33%;
+  height: 2.5rem;
+  border: none;
+  border: 2px solid black;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+}
+.startedWorkout:hover{
+  background-color: black;
+  color: white;
+}
+.workSuccess{
+  width: 46%;
+  height: 40rem;
+  background-color: #50adbf;
+}
+p.sucdes {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 21px;
+}
+p.sucname {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+p.sucdate {
+  text-align: center;
+  margin-top: 1rem;
+}
+.scroll {
+  width: 41px;
+  height: 145px;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sc1 {
+  height: 25px;
+  width: 25px;
+  background-color: #50adbf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sucHead{
+  text-align: center;
+}
+.pricing{
+  height: 45rem;
+  width: 100%;
+  background-color: white;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #444;
+}
+.plan {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.pricing{
+  display: flex;
+  justify-content: space-evenly;
+}
+.gymSubscription{
+  background-color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+.plan h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.plan .price {
+  font-size: 2em;
+  color: #e67e22;
+  margin: 10px 0;
+}
+
+.plan .price span {
+  font-size: 0.5em;
+  color: #888;
+}
+
+.plan ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.plan ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.plan ul li:last-child {
+  border-bottom: none;
+}
+
+.sub {
+  background-color: #e67e22;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sub:hover {
+  background-color: #d35400;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 200px;
+}
+.footer-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+.footer-section p {
+  line-height: 1.6;
+}
+.footer-section .social-icon {
+  display: inline-block;
+  margin: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.footer-section .social-icon:hover {
+  background: #fff;
+  color: #333;
+}
+
+.footer-bottom {
+  padding: 10px 0;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
+}
